@@ -1,0 +1,113 @@
+.gt_levels {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #6daa2c;
+    background-color: black;
+    padding-top: 1em;
+    padding-bottom: 1cm;
+    overflow-y: scroll;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.gt_levels .head {
+    display: flex;
+    width: 100%;
+}
+.gt_levels .spacer {
+    flex: 1;
+}
+.gt_levels h1, .gt_levels h2 {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    margin-left: 1ex;
+    margin-right: 1ex;
+    color: yellow;
+    text-shadow: 0 0 1ex rgba(0,0,0,1);
+}
+.gt_levels h2 {
+    color: gray;
+}
+
+
+_.gt_levels h1, _.gt_levels h2 {
+    -webkit-text-stroke-color: #eeffaa;
+    -webkit-text-stroke-width: 1px;
+}
+
+.gt_levels .levels_buttons {
+    text-align: center;
+}
+
+.gt_levels .level {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: inline-block;
+    border-radius: 0.2cm;
+    text-align: center;
+    margin-left: 0.3cm;
+    margin-right: 0.3cm;
+    margin-top: 0.3cm;
+    font-size: x-small;
+}
+.gt_levels button {
+    display: block;
+    min-width: 1cm;
+    min-height: 1cm;
+
+    border: 2px solid #6dc2ca; /*  #eeffaa; */
+    border-style: outset;
+    border-radius: 0.2cm;
+    background-color: #597dce;
+    box-shadow: 0.5ex 0.5ex 1ex rgba(0,0,0,0.5);
+    outline: none;
+
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-outline: 1px solid red;
+    text-shadow:
+        -1px -1px 0 #eeffaa,
+        1px -1px 0 #eeffaa,
+        -1px 1px 0 #eeffaa,
+        1px 1px 0 #eeffaa;
+}
+.gt_levels .level button:active {
+    border-style: inset;
+}
+.gt_levels .open button {
+    background-color: orange;
+    border: 2px solid #ffc520;
+    border-style: outset;
+}
+.gt_levels .lock {
+    background-color: transparent;
+}
+.gt_levels .lock button {
+    border: 2px solid #aaa;
+    border-style: outset;
+    background-color: #777;
+    text-shadow: none;
+}
+
+.gt_levels .levels_extra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+.gt_levels .levels_extra button {
+    background-color: darkcyan;
+    border-color: cyan;
+    margin: 0.5ex;
+}
+.gt_levels .levels_extra button:active {
+    border-style: inset;
+}
+
